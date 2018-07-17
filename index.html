@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Survey Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Actual Survey Box --> 
+<main id="main">
+  <h1 id="title"><u>Camp Feedback</u></h1>
+  <p id="description">How was camp?</p>
+  <!--Survey -->
+  <form id="survey-form">
+    <!-- Name -->
+    <div class="name-div">
+        <label name="name" class="label name-label" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" required placeholder="John Doe">
+    </div>
+    <!-- Email -->
+    <div class="email-div">
+        <label name="email" class="label email-label" id="email-label">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="johndoe01@johnssite.com">
+    </div>
+    <!-- Age -->
+    <div class="age-div">
+      <label name="age" class="label label-age" id="number-label">Age:</label>
+      <input type="number" id="number" name="age" min="0" max="100" placeholder="0" required>
+    </div>
+    <!-- Which US region did you go -->
+    <div class="region-div">
+      <label name="region" class="label region-label">US Region Camp Occurred:</label>
+    <input list="regions" name="regions" placeholder="Input a region">
+    <select id="dropdown" required>
+      <option value="West" id="dropdown">
+      <option value="Southwest" id="dropdown">
+      <option value="Midwest" id="dropdown">
+      <option value="Northwest" id="dropdown">
+      <option value="South" id="dropdown">
+      </select>
+      </input>
+    </div>
+  <!-- Favorite Part -->
+  <div class="favorite">
+  <label name="radio" id="radio">Favorite part of camp:</label><br>
+  <input type="radio" name="radio" id="radio-select" value="1">Food<br>
+  <input type="radio" name="radio" id="radio-select" value="2">Activities<br>
+  <input type="radio" name="radio" id="radio-select" value="3">Friends<br>
+  </div>
+  <!-- Where did you hear about camp? -->
+  <div class="hear">
+    <label name="hear" id="hear-label">Where did you hear about camp?</label><br>
+    <input type="checkbox" name="hear" value="1">Online<br>
+    <input type="checkbox" name="hear" value="2">Word of mouth<br>
+    <input type="checkbox" name="hear" value="3">Advertisement<br>
+  </div>
+  <!-- Additional Comments -->
+  <label name="comments" id="comment-label">Additional Comments:</label><br>
+  <textarea name="comments">Additional comments</textarea>
+  <!-- Submit -->
+  <div class="submit">
+    <input type="submit" id="submit">
+  </div>
+  </form>
+</main>
+</body>
+</html>
