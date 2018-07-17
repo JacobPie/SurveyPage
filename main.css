@@ -1,0 +1,40 @@
+body {
+  background-color: #D6DBB2;
+  color: #422040;
+  font-family: 'Old Standard TT', serif;
+}
+
+h1, #description {
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+}
+
+#description {
+  font-size: 20px;
+}
+
+div {
+  margin-bottom: 2%;
+}
+
+form {
+  padding-left: 38%;
+  padding-top: 2%;
+  background-color: #BCD8C1;
+  width: 50%;
+  height: 80%;
+  margin-left: 5%;
+}
+
+label {
+  margin-right: 1%;
+}
+
+#submit {
+  margin-top: 2%;
+  width: 30%;
+  height: 40%;
+  border-radius: 5%;
+  boder: solid 1px #D6DBB2;
+  background-color: #D6DBB2;
+}
